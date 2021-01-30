@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Pin from'./Pin/Pin'
+import {RED, BLUE, YELLOW, GREEN} from "Aufgabe-4-MasterMind-Business-Logic/src/colors"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  return(
+  <div>
+  <Pin color={RED} change= {() => {alert("Hallo Ansbach")}}></Pin>
+  <Pin color={BLUE}></Pin>
+  <Pin color={YELLOW}></Pin>
+  <Pin color={GREEN}></Pin>
+  </div>
+  
+  
+
   );
 }
 

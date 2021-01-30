@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.Pin{
+  width: 6em;
+  height: 2em;
+}
+
+.Pin--red {
+  background-color: #282c34;
+  color: rgb(255, 98, 98);
+}
+
+.Pin--blue {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.Pin--yellow {
+  background-color: #282c34;
+  color: #dffb61;
+}
+
+.Pin--green {
+  background-color: #282c34;
+  color: #66fb61;
+}
