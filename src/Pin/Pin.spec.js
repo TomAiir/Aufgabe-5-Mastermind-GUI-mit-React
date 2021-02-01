@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react"
-import {RED, BLUE, YELLOW, GREEN} from "Aufgabe-4-MasterMind-Business-Logic/src/colors"
+import {RED, BLUE, YELLOW, GREEN, PURPLE, ORANGE, PINK, BROWN} from "Aufgabe-4-MasterMind-Business-Logic/src/colors"
 import Pin from "./Pin"
 
 describe ('Pin', () => {
@@ -23,6 +23,26 @@ describe ('Pin', () => {
         it('should be blue when property-color is green', () => {
             const {container} = render(<Pin color={GREEN} />)
             expect(container.querySelector(".Pin--green")).not.toBeNull()
+        })
+
+        it('should be blue when property-color is purple', () => {
+            const {container} = render(<Pin color={PURPLE} />)
+            expect(container.querySelector(".Pin--purple")).not.toBeNull()
+        })
+
+        it('should be blue when property-color is orange', () => {
+            const {container} = render(<Pin color={ORANGE} />)
+            expect(container.querySelector(".Pin--orange")).not.toBeNull()
+        })
+
+        it('should be blue when property-color is pink', () => {
+            const {container} = render(<Pin color={PINK} />)
+            expect(container.querySelector(".Pin--pink")).not.toBeNull()
+        })
+
+        it('should be blue when property-color is brown', () => {
+            const {container} = render(<Pin color={BROWN} />)
+            expect(container.querySelector(".Pin--brown")).not.toBeNull()
         })
 
         it('should warn when property-color is black', () => {
